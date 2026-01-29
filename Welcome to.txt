@@ -1,0 +1,7 @@
+Welcome to
+Antigravity Browser Control
+Preview
+Getting Started
+The agent can click, scroll, type, and navigate web pages automatically. While working, it displays an overlay
+				showing its progress and provides controls to stop execution if you need to intervene.
+Simply return to your Antigravity conversation, and the browser will be used automatically when appropriate.
