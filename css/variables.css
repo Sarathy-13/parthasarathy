@@ -1,0 +1,135 @@
+:root {
+    /* Color Palette - Sci-Fi / Tech Theme */
+    --primary-color: #00f3ff;
+    /* Neon Cyan */
+    --primary-dark: #00bcd4;
+    /* Darker Cyan */
+    --secondary-color: #ff00ff;
+    /* Neon Pink */
+    --accent-color: #7000ff;
+    /* Deep Purple Accent */
+
+    --bg-color: #0a0a12;
+    /* Very Dark Blue/Black */
+    --bg-card: #13131f;
+    /* Dark Card Background */
+    --bg-overlay: rgba(19, 19, 31, 0.8);
+    /* Glass effect overlay */
+
+    --text-main: #ffffff;
+    /* White Text */
+    --text-muted: #a0a0b0;
+    /* Soft Gray/Blue Text */
+    --text-light: #e0e0e0;
+
+    --border-color: #2a2a40;
+    /* Dark Border */
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #00f3ff 0%, #ff00ff 100%);
+    --gradient-hero: radial-gradient(circle at center, #1a0b2e 0%, #0a0a12 100%);
+    --gradient-glow: linear-gradient(90deg, transparent, rgba(0, 243, 255, 0.5), transparent);
+
+    /* Fonts */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-code: 'Fira Code', monospace;
+
+    /* Spacing & Layout */
+    --container-width: 1200px;
+    --header-height: 80px;
+    --border-radius: 4px;
+    /* sharper corners for tech look */
+    --border-radius-lg: 8px;
+
+    /* Shadows & Glows */
+    --shadow-sm: 0 0 10px rgba(0, 243, 255, 0.1);
+    --shadow-md: 0 0 20px rgba(0, 243, 255, 0.2);
+    --shadow-lg: 0 0 30px rgba(112, 0, 255, 0.3);
+    --glow-text: 0 0 10px rgba(0, 243, 255, 0.5);
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+}
+
+/* Force Dark Mode styles globally since the theme is dark */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+}
+
+/* --- Theme Definitions --- */
+
+/* Theme: Hacker (Matrix Style) */
+body[data-theme="hacker"] {
+    --primary-color: #0f0;
+    /* Matrix Green */
+    --primary-dark: #00fa00;
+    --secondary-color: #00ff00;
+    --accent-color: #003300;
+    /* Dark Green */
+
+    --bg-color: #000000;
+    /* Pure Black */
+    --bg-card: #0a0a0a;
+    --bg-overlay: rgba(0, 50, 0, 0.9);
+
+    --text-main: #00ff00;
+    --text-muted: #00cc00;
+    --text-light: #ccffcc;
+
+    --border-color: #003300;
+
+    --gradient-primary: linear-gradient(180deg, #00ff00 0%, #003300 100%);
+    --gradient-hero: radial-gradient(circle, #001100 0%, #000000 100%);
+
+    --font-heading: 'Courier New', monospace;
+    --font-body: 'Courier New', monospace;
+
+    --shadow-sm: 0 0 5px #0f0;
+    --shadow-md: 0 0 10px #0f0;
+    --shadow-lg: 0 0 20px #0f0;
+}
+
+/* Theme: Retro (8-bit / Synthwave) */
+body[data-theme="retro"] {
+    --primary-color: #ff0055;
+    /* Hot Pink */
+    --primary-dark: #cc0044;
+    --secondary-color: #ffcc00;
+    /* Arcade Yellow */
+    --accent-color: #00ccff;
+    /* Cyan */
+
+    --bg-color: #2b003b;
+    /* Deep Purple */
+    --bg-card: #420058;
+    --bg-overlay: rgba(66, 0, 88, 0.9);
+
+    --text-main: #ffffff;
+    --text-muted: #ffccff;
+    --text-light: #ffff00;
+
+    --border-color: #ff0055;
+
+    --gradient-primary: linear-gradient(90deg, #ff0055 0%, #ffcc00 100%);
+    --gradient-hero: repeating-linear-gradient(0deg,
+            transparent,
+            transparent 50px,
+            #420058 50px,
+            #420058 51px), linear-gradient(to bottom, #2b003b, #000);
+
+    --font-heading: 'Press Start 2P', cursive, 'Courier New', monospace;
+    /* Fallback if font not loaded */
+    --font-body: 'Courier New', monospace;
+
+    --border-radius: 0px;
+    /* Blocky */
+    --border-radius-lg: 0px;
+
+    --shadow-sm: 4px 4px 0px #000;
+    /* Pixel shadow */
+    --shadow-md: 6px 6px 0px #000;
+    --shadow-lg: 8px 8px 0px #000;
+}
